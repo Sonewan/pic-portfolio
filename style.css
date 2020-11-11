@@ -1,0 +1,506 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+   }
+.header 
+   {
+       width : 100%;
+        height: 85px; 
+       display:flex;
+       /* display: solid; */
+       border-style: solid;
+       border-top: black;
+       justify-content: space-around;
+       top: 0;
+       z-index:100;
+       position: sticky;
+       background-color: rgb(163, 159, 159);
+       box-sizing: border-box;
+       background: linear-gradient( #e7cbbf,#1ba184);
+       border-radius: 0 0 10% 10% / 0 0 15% 15%;
+   }
+
+ .header-right{
+    display: flex;
+    font-style: italic;
+    font-size: 23px;    
+    padding-top: 20px;
+}
+
+.header-left{
+    display: flex;
+} 
+
+.title{
+    font-size: 60px;
+    line-height: 5em;                           /* ye dekh lena sabb  */
+    font-weight: 1000;
+}
+.icon img {
+    width: 60px;
+    height: 60px;
+    /* padding-right: 10%; */
+    border-radius: 10px;
+    padding-bottom: 10%;
+}
+.logo_container {
+    height: 100%;
+    display:table;
+    float: left;
+    padding-left: 5%;
+}
+.logo_container {
+    color: black;
+    display:table-cell;
+    vertical-align: middle;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 155%;
+}
+.logo_container span{
+    font-weight: 400;
+    color: maroon;
+    font-style:oblique ;
+    font-size: 135%;
+}
+.navigation{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 10%;
+}
+.navigation  li a
+{
+ display: inline-flexbox;
+ justify-content: space-around;
+ vertical-align: middle;
+ height:100%;
+ color:rgb(31, 4, 94);
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 25px;
+ padding-top: 20%;
+} 
+.navigation li a button{ 
+    padding: 9px 15px;
+    background-color:rgb(199, 187, 25);
+   
+    border-radius: 15px;
+    cursor: pointer;
+    transition:  0.3s ease 0s; 
+    font-size: 80%;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+.navigation li button:hover{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(213, 228, 220, 0.8);
+}
+
+.hero img{
+    position: initial;
+    width: 100%;
+    height: auto;
+    /*display: flex;
+    transition: 0.7s; */
+    object-fit: cover;
+    background-color: khaki;
+}
+.hero-text{
+    text-align:center;
+    position: relative;
+    bottom: 1px;
+    font-size: xx-large;
+    font-style: italic;
+    font-family: cursive;
+    font-weight:400;
+    color: rgb(218, 16, 16);
+}
+ .images-container{
+    display: grid;
+    grid-template-columns: 12.2% 12.2% 12.2% 12.2% 12.2% 12.2% 12.2%;
+    grid-template-rows: 25% 25% 25%;
+    grid-gap: 30px 30px;
+    height: 100vh;
+    margin: 20px 2.25%;
+    background-color: #f9f7f7;
+}
+
+/* .row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+} */
+
+.picture{
+    position: relative;
+}
+
+.picture img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    /* transform: rotate3d(1, 1, 0, -45deg); */
+    box-shadow: 10px 30px 50px #50534e;
+    background:black ;
+    border-radius: 5px;
+
+}
+
+.picture img:hover {
+    /* transform: rotate3d(0, 0, 0, 0deg); */
+    object-fit: contain;
+    width: 120%;
+    height: 120%;
+    z-index: 100;
+    left: -25%;
+    top: -25%;
+    position: absolute;
+}
+
+.wide0 {
+    grid-column: 1 / span 2;
+    grid-row: 1/ span 2; 
+}
+
+.wide0{
+    grid-column: 1 / span 2;
+    grid-row: 1/span 2;
+}
+
+.wide img:hover {
+    width: 80%;
+    height: 80%;
+    left: -10%;
+    top: -10%;
+}
+
+.wide img:hover {
+    width: 100%;
+    height: 100%;
+    left: -10%;
+    top: -10%;
+} 
+.about h1{
+ color: brown;
+ text-align: left;
+ padding-left: 5%;
+}
+.about  p{
+    color: rgb(12, 139, 0);
+   font-weight: bold;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+padding-left: 2%;
+padding-right: 2%;
+}
+/*.wide018 {
+    grid-column:  / span 2;
+    grid-row: 1/ span 2; 
+}
+
+/*.wide18{
+    grid-column: 6 / span 2;
+    grid-row: 2/span 2;
+}
+
+.wide img:hover {
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
+}
+
+.wide img:hover {
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
+} */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    z-index: 100;
+    width: 100%;
+    /* background-color: #222831; */
+    background: linear-gradient( #1ba184,#e7cbbf);
+    color: #080a09;
+    border-radius: 20px;
+    padding: 0.1em;
+}
+.footer-left{
+    display: flex;
+    font-style: italic;
+    font-size: 23px;
+    padding-top: 20px;
+}
+.footer-right{
+    display: flex;
+}
+.footer-item{
+    font-family: serif;
+    /* font-size: 23px; */
+    /* line-height: 2em; */
+    /* color: #14ffec;  */
+    /* display: inline-block;  */
+    padding-right: 80px;
+}
+
+
+ 
+@media only screen and (max-width:750px){
+    .body{
+        background-color: whitesmoke;
+    }
+    .header 
+    {
+    width : 100%;
+     height: 85px; 
+    display:flex;
+    /* display: solid; */
+    border-style: solid;
+    border-top: black;
+    justify-content: space-around;
+    top: 0;
+    z-index:100;
+    position: sticky;
+    background-color: rgb(163, 159, 159);
+    box-sizing: border-box;
+    background: linear-gradient( #e7cbbf,#1ba184);
+    border-radius: 0 0 10% 10% / 0 0 15% 15%;
+}
+
+.header-right{
+ display: flex;
+ font-style: italic;
+ font-size: 23px;    
+ padding-top: 20px;
+}
+
+.header-left{
+ display: flex;
+} 
+
+.title{
+ font-size: 60px;
+ line-height: 5em;                           /* ye dekh lena sabb  */
+ font-weight: 1000;
+}
+.icon img {
+ width: 50px;
+ height: 50px;
+ /* padding-right: 10%; */
+ border-radius: 8px;
+ padding-bottom: 20%;
+}
+.logo_container{
+ height: 100%;
+ display:table;
+ float: left;
+ padding-left: 5%;
+}
+.logo_container {
+ color: black;
+ height:100%;
+ display:table-cell;
+ vertical-align: middle;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-weight: 300;
+ font-style: initial;
+}
+.logo_container  span{
+ font-weight: 800;
+ color: maroon;
+ font-style: oblique;
+}
+.navigation{
+ display: flex;
+ padding-top: 20px;
+ padding-left: 10%;
+}
+.navigation  li a
+{
+display: inline-flexbox;
+justify-content: space-around;
+vertical-align: middle;
+height:100%;
+color:rgb(31, 4, 94);
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
+padding-top: 20%;
+} 
+.navigation li a button{ 
+ padding: 9px 15px;
+ background-color:rgb(199, 187, 25);
+
+ border-radius: 15px;
+ cursor: pointer;
+ transition:  0.3s ease 0s; 
+ font-size: medium;
+ font-style: italic;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.navigation li button:hover{
+ display: flex;
+ justify-content: space-between;
+ background-color: rgba(213, 228, 220, 0.8);
+}
+
+.hero img{
+ position: initial;
+ width: 100%;
+ height: auto;
+ /*display: flex;
+ transition: 0.7s; */
+ object-fit: cover;
+ background-color: khaki;
+}
+.hero-text{
+ text-align:center;
+ position: relative;
+ bottom: 1px;
+ font-size: medium;
+ font-style: italic;
+ font-family: cursive;
+ font-weight:400;
+ color: rgb(218, 16, 16);
+}
+.images-container{
+ display: grid;
+ grid-template-columns: 30% 30% 30%;
+ grid-template-rows: 25vh 25vh 25vh 25vh 25vh 25vh;
+ grid-gap: 20px 3.5%;
+ height: 190vh;
+ margin: 20px 2.25%;
+ background-color: #f9f7f7;
+}
+
+/* .row {
+ display: -ms-flexbox; 
+ display: flex;
+ -ms-flex-wrap: wrap; 
+ flex-wrap: wrap;
+ padding: 0 4px;
+} */
+
+.picture{
+ position: relative;
+}
+
+.picture img{
+ object-fit: scale-down;
+ width: 100%;
+ height: 80%;
+ /* transform: rotate3d(1, 1, 0, -45deg); */
+ box-shadow: 10px 30px 50px #50534e;
+ background:black ;
+ border-radius: 5px;
+
+}
+
+.picture img:hover {
+ /* transform: rotate3d(0, 0, 0, 0deg); */
+ object-fit: contain;
+ width: 120%;
+ height: 120%;
+ z-index: 100;
+ left: -25%;
+ top: -25%;
+ position: absolute;
+}
+
+.wide0 {
+ grid-column: 1 / span 2;
+ grid-row: 1/ span 2; 
+}
+
+.wide0{
+ grid-column: 1 / span 2;
+ grid-row: 1/span 2;
+}
+
+.wide img:hover {
+ width: 80%;
+ height: 80%;
+ left: -10%;
+ top: -10%;
+}
+
+.wide img:hover {
+ width: 100%;
+ height: 100%;
+ left: -10%;
+ top: -10%;
+} 
+.about h1{
+color: brown;
+text-align: left;
+padding-left: 5%;
+}
+.about  p{
+ color: rgb(12, 139, 0);
+font-weight: bold;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding-bottom: 10%;
+}
+/*.wide018 {
+ grid-column:  / span 2;
+ grid-row: 1/ span 2; 
+}
+
+/*.wide18{
+ grid-column: 6 / span 2;
+ grid-row: 2/span 2;
+}
+
+.wide img:hover {
+ width: 120%;
+ height: 120%;
+ left: -10%;
+ top: -10%;
+}
+
+.wide img:hover {
+ width: 120%;
+ height: 120%;
+ left: -10%;
+ top: -10%;
+} */
+
+.footer{
+ display: flex;
+ justify-content: space-around;
+ z-index: 100;
+ width: 100%;
+ /* background-color: #222831; */
+ background: linear-gradient( #1ba184,#e7cbbf);
+ color: #080a09;
+ border-radius: 20px;
+ padding: 0.1em;
+ font-size: 12px;
+}
+.footer-left{
+ display: flex;
+ font-style: italic;
+ font-size: 20px;
+ padding-top: 20px;
+}
+.footer-right{
+ display: flex;
+}
+.footer-item{
+ font-family: serif;
+ /* font-size: 23px; */
+ /* line-height: 2em; */
+ /* color: #14ffec;  */
+ /* display: inline-block;  */
+ padding-right: 20px;
+}
+}
